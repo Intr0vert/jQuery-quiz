@@ -1,0 +1,9 @@
+body {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffffff;
+  background: url("../img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}

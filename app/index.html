@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+  	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="fonts/Tinos/stylesheet.css"> 
+	<title>SiteName</title>
+ 	</head>
+
+ 	<body>
+
+		<div class="wrapper wrapper--activateBtn">
+			<div class="ycont ycont--activateBtn">
+				<button class="activateBtn">Open quiz</button>
+			</div>
+		</div>
+
+		<div class="wrapper wrapper--quiz">
+			<div class="ycont ycont--quiz">
+				<button class="quiz--close">
+					<img src="img/quiz-close.png" alt="">
+				</button>
+				<div class="quiz--control">
+					<button class="quiz--left">
+						<img src="img/quiz-left.png" alt="">
+					</button>
+					<button class="quiz--right">
+						<img src="img/quiz-right.png" alt="">
+					</button>
+				</div>
+				<form class="quiz--form">
+					<div class="quiz--form-left">
+						<h3>Спасибо за ответы! <span>Заполните форму</span></h3>
+					</div>
+					<div class="quiz--form-right">
+						<label for="quiz--form-1">
+							<input id="quiz--form-1" type="text" 
+								placeholder="Ваше имя">
+							<div>
+								<img src="img/man.png" alt="">
+							</div>
+						</label>
+						<label for="quiz--form-2">
+							<input id="quiz--form-2" type="text" 
+								placeholder="Ваш телефон">	
+							<div>
+								<img src="img/phone.png" alt="">
+							</div>
+						</label>
+						<button class="btn-blue">Получить мои ответы</button>
+						<p>
+							Я принимаю условия обработки персональных данных
+						</p>
+					</div>
+				</form>
+				<div class="quiz--header">
+					<p>Шаг <span class="quiz--actual"></span> из <span class="quiz--sum"></span></p>
+					<div class="quiz--progressLine"></div>
+				</div>
+				<div class="quiz--content">
+					<div class="quiz--content-el quiz--content-elActive" data-index="1-1" data-actual="true">
+						<h3>Вопрос <span>1-1</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="2-2">2-2</button>
+							<button data-goTo="3-2">3-2</button>
+							<button data-goTo="4-2">4-2</button>
+							<button data-goTo="5-2">5-2</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="2-2" data-actual="false">
+						<h3>Вопрос <span>2-2</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="2-3">2-3</button>
+							<button data-goTo="3-3">3-3</button>
+							<button data-goTo="4-3">4-3</button>
+							<button data-goTo="5-3">5-3</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="2-3" data-actual="false">
+						<h3>Вопрос <span>2-3</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="2-4">2-4</button>
+							<button data-goTo="3-4">3-4</button>
+							<button data-goTo="4-4">4-4</button>
+							<button data-goTo="5-4">5-4</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="2-4" data-actual="false">
+						<h3>Вопрос <span>2-4</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="99">end</button>
+							<button data-goTo="99">end</button>
+							<button data-goTo="99">end</button>
+							<button data-goTo="99">end</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="3-2" data-actual="false">
+						<h3>Вопрос <span>3-2</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="2-3">2-3</button>
+							<button data-goTo="3-3">3-3</button>
+							<button data-goTo="4-3">4-3</button>
+							<button data-goTo="5-3">5-3</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="3-3" data-actual="false">
+						<h3>Вопрос <span>3-3</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="2-4">2-4</button>
+							<button data-goTo="3-4">3-4</button>
+							<button data-goTo="4-4">4-4</button>
+							<button data-goTo="5-4">5-4</button>
+						</div>
+					</div>
+					<div class="quiz--content-el" data-index="3-4" data-actual="false">
+						<h3>Вопрос <span>3-4</span></h3>
+						<div class="quiz--content-variants">
+							<button data-goTo="99">end 1</button>
+							<button data-goTo="99">end 2</button>
+							<button data-goTo="99">end 3</button>
+							<button data-goTo="99">end 4</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <!-- jQuery first-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+		<!-- Optional JavaScript -->
+  </body>
+</html>
